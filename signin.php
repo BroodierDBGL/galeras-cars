@@ -33,7 +33,7 @@
             $_SESSION['user_id'] = $row['id'];
             $_SESSION['user_email'] = $row['email'];
             $_SESSION['user_fullname'] = $row['fullname'];
-            header('refresh:0;url=home.php'); //
+            header('refresh:0;url=index.php'); //
         }else{
             echo "<script>alert('Email or password not found')</script>";
             header('refresh:0;url=index.html');
