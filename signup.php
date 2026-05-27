@@ -59,7 +59,7 @@
         pg_query($supa_conn,  "COMMIT");
         //echo "Registrado Exitosamente en ambas bases de datos!";
         echo "<script>alert('Listo. Usuario registrado')</script>";
-        header('refresh:0;url=login.html');
+        header('refresh:0;url=login.php');
 
     } else {
         pg_query($local_conn, "ROLLBACK");

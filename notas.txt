@@ -1,0 +1,6 @@
+Requerimientos
+    1.  Programar Profile (editar correo electronico, contraseña y foto de perfiñ)
+    2.  En el menu aumentar la opcion usuarios con sus datos y que se puedan editar (eliminar o editar)
+    3.  En vehiculos crear boton de añadir carro y que se ponga en la BD, tambien los botones editar y eliminar puedan hacer sus acciones
+    4.  En la tabla users crear atributo url_photo (se guardan en la carpeta users_photos y se deben guardar en el servidor)
+    5.  
