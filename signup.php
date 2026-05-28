@@ -8,7 +8,7 @@
     $e_mail  = $_POST ['email'];
     $m_phone = $_POST ['mphone'];
     $p_sswd  = $_POST ['psswd'];
-    $enc_pass = md5($p_sswd);
+    //$enc_pass = md5($p_sswd);
 
     // FEATURE 1: Validar unicidad del email
     $email_check = pg_query($local_conn, "SELECT id FROM users WHERE email = '$e_mail'");
@@ -31,7 +31,7 @@
     pg_query($supa_conn,  "BEGIN");
 
     // FEATURE 4: Hasheo seguro con bcrypt en lugar de MD5
-    //$enc_pass = password_hash($p_sswd, PASSWORD_BCRYPT);
+    $enc_pass = password_hash($p_sswd, PASSWORD_BCRYPT);
 
     //Query to insert into SQL
     $sql = "INSERT INTO users (firstname, lastname, email, mobile_phone, psswd, url_photo)
